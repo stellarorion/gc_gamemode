@@ -14,11 +14,11 @@ minetest.register_chatcommand("gamemode", {
         if param == "1" then
             privs.creative = true
             minetest.set_player_privs(name, privs)
-            return true, "gm 1"
+            return true, "Gamemode changed to creative"
         elseif param == "0" then
             privs.creative = nil
             minetest.set_player_privs(name, privs)
-            return true, "gm 0"
+            return true, "Gamemode changed to survival"
         end
     end
 })
@@ -33,11 +33,11 @@ minetest.register_chatcommand("gm", {
         if param == "1" then
             privs.creative = true
             minetest.set_player_privs(name, privs)
-            return true, "gm 1"
+            return true, "Gamemode changed to creative"
         elseif param == "0" then
             privs.creative = nil
             minetest.set_player_privs(name, privs)
-            return true, "gm 0"
+            return true, "Gamemode changed to survival"
         end
     end
 })
